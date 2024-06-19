@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visionary Zach - Music</title>
+    <title>Visionary Zach - Rap Artist from Arkansas</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -58,9 +58,8 @@
             background-color: rgba(255, 255, 255, 0.2);
         }
 
-        .soundcloud-player {
+        .content {
             margin-top: 20px;
-            text-align: center;
         }
 
         .footer {
@@ -76,6 +75,32 @@
 
         a:hover {
             text-decoration: underline;
+        }
+
+        /* Photo album styling */
+        .photo-album {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .photo-album figure {
+            flex: 1 1 calc(33.333% - 10px); /* Adjust based on the desired number of columns */
+            margin: 0;
+        }
+
+        .photo-album img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .photo-album figcaption {
+            text-align: center;
+            margin-top: 5px;
+            color: #ccc;
         }
     </style>
 </head>
@@ -98,15 +123,31 @@
         </ul>
     </nav>
 
-    <!-- Main Content Section -->
+    <!-- Main Content Sections -->
     <div class="content">
         <section>
-            <h2 style="text-align: center; color: #fff;">Music</h2>
-            <!-- SoundCloud Player Embed Code -->
-            <div class="soundcloud-player">
-                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
-                        src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/zach-the-rapper-868201611/sets/cause-its-my-birthday&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true">
-                </iframe>
+            <h2><a href="music.html" style="color: #fff; text-decoration: none;">Music</a></h2>
+            <p>My music reflects my journey, experiences, and the vibrant culture of Arkansas. I blend elements of [mention any specific styles or influences] to create a unique sound that defines my artistic vision.</p>
+            <p>Check out my latest SoundCloud release: <a href="https://soundcloud.com/zach-the-rapper-868201611/sets/cause-its-my-birthday" style="color: #9c27b0; text-decoration: none;">Cause It's My Birthday</a></p>
+        </section>
+
+        <!-- Photo Album Section -->
+        <section>
+            <h2>Photo Album</h2>
+            <div class="photo-album">
+                <figure>
+                    <img src="photo1.jpg" alt="Photo 1">
+                    <figcaption>Just Chillin</figcaption>
+                </figure>
+                <figure>
+                    <img src="photo2.jpg" alt="Photo 2">
+                    <figcaption>Old Album Art</figcaption>
+                </figure>
+                <figure>
+                    <img src="photo3.jpg" alt="Photo 3">
+                    <figcaption>Art</figcaption>
+                </figure>
+                <!-- Add more photos as needed -->
             </div>
         </section>
     </div>
